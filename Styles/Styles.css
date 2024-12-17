@@ -1,0 +1,60 @@
+body {
+    background-color: #fadadd;
+}
+.Player{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400 px;
+    text-align: center;
+}
+
+
+
+
+.Picture{
+    text-align: center;
+}
+
+.title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1000 px;
+}
+
+.linkstitle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: smaller;
+    padding-top: 5 cm;
+
+}
+
+a {
+    
+    text-decoration: underline;
+    color: gray;
+}
+
+.links {
+    text-align: center;
+}
+
+.video {
+    text-align: center;
+}
+
+.nav-item {
+    text-align: center;
+    list-style-type: none;
+}
+
+.Subtitle {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}

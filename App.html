@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGA Tour Facts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #007b5e;
+        }
+
+        button {
+            background-color: #007b5e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #005f47;
+        }
+
+        #fact {
+            margin-top: 30px;
+            font-size: 18px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>PGA Tour Random Facts</h1>
+    <p>Click the button below to learn something new about your favorite golfers on the PGA Tour!</p>
+    <button id="generateFact">Generate Fact</button>
+    <p id="fact"></p>
+
+    <script>
+        const facts = [
+            "Tiger Woods has won 15 major championships in his career.",
+            "Phil Mickelson is the oldest player to win a major, claiming the 2021 PGA Championship at 50 years old.",
+            "Jack Nicklaus holds the record for the most major championship wins with 18.",
+            "Rory McIlroy was the youngest player to reach $10 million in career earnings on the PGA Tour.",
+            "Dustin Johnson once hit a drive that measured over 400 yards in competition.",
+            "Jordan Spieth won his first major, the 2015 Masters, at just 21 years old.",
+            "Bryson DeChambeau is known as the 'mad scientist' for his analytical approach to the game.",
+            "Arnold Palmer's nickname was 'The King,' and he is credited with popularizing golf worldwide.",
+            "Sam Snead holds the record for the most PGA Tour wins with 82.",
+            "Jon Rahm became the first Spanish golfer to win the U.S. Open in 2021."
+        ];
+
+        document.getElementById('generateFact').addEventListener('click', function() {
+            const randomIndex = Math.floor(Math.random() * facts.length);
+            document.getElementById('fact').textContent = facts[randomIndex];
+        });
+    </script>
+</body>
+</html>
